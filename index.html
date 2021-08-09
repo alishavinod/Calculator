@@ -10,15 +10,27 @@
 </head>
 <body>
 <div class="container-1">
-<h2>calc</h2>
+<h1>calc</h1>
 <h6>THEME</h6>
+<label class="container">
+  <input class="theme1" type="radio" checked="checked" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container">
+  <input class="theme2"type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container">
+  <input class="theme3" type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
 </div>
   <h1 class="result">0</h1>
 <div class="container-2 border-top">
 <button class="number calc">7</button>
 <button class="number calc">8</button>
 <button class="number calc">9</button>
-<button class="blue-button del">DEL</button>
+<button class="blue-button del" onclick="delChar()">DEL</button>
 </div>
 <div class="container-2">
   <button class="number calc">4</button>
@@ -39,10 +51,13 @@
       <button class="operator calc">x</button>
       </div>
       <div class="container-2 border-bottom">
-        <button class="blue-button reset">RESET</button>
-        <button class="equals">=</button>
+        <button class="blue-button reset" onclick="reset()">RESET</button>
+        <button class="equals" onclick="calculate()">=</button>
         </div>
         <script src="index.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 <footer class="attribution">
   Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
