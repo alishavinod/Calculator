@@ -80,4 +80,4 @@ Use this section to outline areas that you want to continue focusing on in futur
 ## Author
 
 - Website - [Alisha Vinod](https://alishavinod.github.io/Portfolio/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@alishavinod](https://www.frontendmentor.io/profile/alishavinod)
