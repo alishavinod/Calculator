@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan&display=swap");
+@media screen and (max-width: 1024px) {
+  body {
+    margin: 7% 20% !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    margin: 7% !important;
+  }
+}
+body {
+  background-color: hsl(222, 26%, 31%);
+  font-family: "Spartan", sans-serif;
+  margin: 7% 33%;
+  color: white;
+}
+.container-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.result {
+  margin: 3% auto;
+  padding: 7% 7% 2% 0;
+  height: 60px;
+  text-align: right;
+  border-radius: 10px;
+  background-color: hsl(224, 36%, 15%);
+}
+.container-2 {
+  padding: 4%;
+  display: flex;
+
+  background-color: hsl(223, 31%, 20%);
+}
+.border-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.border-bottom {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+button {
+  margin: 0 2%;
+  padding: 2%;
+  background-color: hsl(30, 25%, 89%);
+  box-shadow: 0px 3px hsl(28, 16%, 65%);
+  color: hsl(223, 31%, 20%);
+  font-weight: 700;
+  border-radius: 10px;
+  height: 55px;
+  width: 100px;
+  border: none;
+}
+button:active {
+  background-color: hsl(28, 16%, 65%);
+}
+.number {
+  font-size: 32px;
+}
+.del {
+  width: 100px !important;
+}
+.blue-button {
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0px 3px hsl(224, 28%, 35%);
+  color: white;
+  font-size: 20px;
+  width: 220px;
+}
+.blue-button:active {
+  background-color: hsl(224, 28%, 35%);
+}
+.equals {
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: 0px 3px hsl(6, 70%, 34%);
+  color: white;
+  font-size: 20px;
+  width: 220px;
+}
+.equals:active {
+  background-color: hsl(6, 70%, 34%);
+}
+.operator {
+  font-size: 30px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: white;
+  vertical-align: bottom;
+}
