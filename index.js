@@ -109,11 +109,9 @@ if(string)
 {
     string = string.slice(0,-1);
     document.getElementsByClassName("result")[0].innerHTML=string;
-    if(string=='')
-    {
-        reset();
-    }
 }
+else
+    reset();
 }
 function reset(){
     string='';
