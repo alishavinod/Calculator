@@ -28,8 +28,7 @@ Users should be able to:
 - **Bonus**: Have their initial theme preference checked using `prefers-color-scheme` and have any additional changes saved in the browser
 
 ### Screenshot
-
-![](./screenshot.jpg)
+![image](https://user-images.githubusercontent.com/62168160/128663721-0ebbd095-262b-47bd-a7aa-b86ded247fa2.png)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
