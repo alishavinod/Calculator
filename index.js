@@ -51,7 +51,7 @@ if(string && !isOperator(string[string.length-1]))
     res=eval(string);
     if(res=="Infinity" || isNaN(res) || res=="-Infinity")
     {
-        document.getElementsByClassName("result")[0].innerHTML="Error";
+        document.getElementsByClassName("result")[0].innerHTML="Error😲";
         string='';
     }
     else
