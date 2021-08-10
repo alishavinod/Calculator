@@ -75,7 +75,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 ### Useful resources
 
 - [CSS flexbox tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background) - This helped me learn about flexbox and how to style components in a grid layout. I really liked this pattern and will use it going forward.
-- [DOM Concept](https://www.w3schools.com/js/js_htmldom_html.asp) - This is an amazing article which helped me finally understand HTML DOM. I'd recommend it to anyone still learning this concept.
+- [Customize range slider](https://brennaobrien.com/blog/2014/05/style-input-type-range-in-every-browser.html) - This is an amazing article which helped me style my range slider for different themes. 
 
 ## Author
 
