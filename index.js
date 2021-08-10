@@ -1,8 +1,9 @@
 var string = '';
 var prevHtml;
 var res;
-
-document.getElementsByClassName("checkmark")[0].addEventListener("click", function(){
+function themeToggle(){
+if(document.querySelector("input").value==='1')
+{
     document.getElementsByTagName("body")[0].style.backgroundColor="hsl(222, 26%, 31%)";
     document.getElementsByTagName("body")[0].style.color="white";
     document.getElementsByClassName("result")[0].style.backgroundColor="hsl(224, 36%, 15%)";
@@ -25,8 +26,10 @@ document.getElementsByClassName("checkmark")[0].addEventListener("click", functi
     document.getElementsByClassName("equals")[0].style.backgroundColor="hsl(6, 63%, 50%)";
     document.getElementsByClassName("equals")[0].style.boxShadow="0px 4px hsl(6, 70%, 34%)";
     document.getElementsByClassName("equals")[0].style.color="white";
-});
-document.getElementsByClassName("checkmark")[1].addEventListener("click", function(){
+}
+else
+    if(document.querySelector("input").value==='2')
+{
     document.getElementsByTagName("body")[0].style.backgroundColor="hsl(0, 0%, 90%)";
     document.getElementsByTagName("body")[0].style.color="hsl(60, 10%, 19%)";
     document.getElementsByClassName("result")[0].style.backgroundColor="hsl(0, 0%, 93%)";
@@ -49,10 +52,12 @@ document.getElementsByClassName("checkmark")[1].addEventListener("click", functi
     document.getElementsByClassName("equals")[0].style.backgroundColor="hsl(25, 98%, 40%)";
     document.getElementsByClassName("equals")[0].style.boxShadow="0px 4px hsl(25, 99%, 27%)";
     document.getElementsByClassName("equals")[0].style.color="white";
-});
-document.getElementsByClassName("checkmark")[2].addEventListener("click", function(){
-        document.getElementsByTagName("body")[0].style.backgroundColor="hsl(268, 75%, 9%)";
-        document.getElementsByTagName("body")[0].style.color="hsl(52, 100%, 62%)";
+}
+else
+    if(document.querySelector("input").value==3)
+    {
+    document.getElementsByTagName("body")[0].style.backgroundColor="hsl(268, 75%, 9%)";
+    document.getElementsByTagName("body")[0].style.color="hsl(52, 100%, 62%)";
     document.getElementsByClassName("result")[0].style.backgroundColor="hsl(268, 71%, 12%)";
     clen=document.querySelectorAll(".container-2").length;
     for( var i=0; i<clen; i++){
@@ -73,15 +78,17 @@ document.getElementsByClassName("checkmark")[2].addEventListener("click", functi
     document.getElementsByClassName("equals")[0].style.backgroundColor="hsl(176, 100%, 44%)";
     document.getElementsByClassName("equals")[0].style.boxShadow="0px 4px hsl(177, 92%, 70%)";
     document.getElementsByClassName("equals")[0].style.color="hsl(198, 20%, 13%)";
-});   
+}
+}
 function isOperator (c){
-    if(c=='+' || c=='-' || c=='*' || c=='/')
+    if(c=='+' || c=='-' || c=='*' || c=='/' || c=='x' || c=='.')
         return true;
     return false;
 }
 var len = document.getElementsByClassName("calc").length;
 for( var i=0; i<len; i++)
-document.getElementsByClassName("calc")[i].addEventListener("click", function(){
+{
+    document.getElementsByClassName("calc")[i].addEventListener("click", function(){
     var buttonHtml = this.innerHTML;
     if(string.length==0 && isOperator(buttonHtml))
     {
@@ -91,24 +98,43 @@ document.getElementsByClassName("calc")[i].addEventListener("click", function(){
     {
         return;
     }
+    if(string[0]=='0' && string.length==1 && buttonHtml=='0')
+    {
+        return;
+    }
     if(buttonHtml=='x')
         buttonHtml='*';
     string = string + buttonHtml;
     document.getElementsByClassName("result")[0].innerHTML=string;
+    console.log(string);
 });
+}
 function calculate(){
 if(string && !isOperator(string[string.length-1]))
 {
     res=eval(string);
+    if(res=="Infinity" || isNaN(res) || res=="-Infinity")
+    {
+        document.getElementsByClassName("result")[0].innerHTML="Error";
+        string='';
+    }
+    else
+    {
     document.getElementsByClassName("result")[0].innerHTML=res;
-    string='';
+    res=res.toString();
+    string=res;
+    }
 }
 }
 function delChar(){
+    
 if(string)
 {
     string = string.slice(0,-1);
     document.getElementsByClassName("result")[0].innerHTML=string;
+    if(!string)
+        reset();
+
 }
 else
     reset();
