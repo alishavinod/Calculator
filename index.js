@@ -35,7 +35,7 @@ for( var i=0; i<len; i++)
     {
         string=string.slice(0,-1);
     }
-    if(isOperator(string[string.length-2]) && string[string.length-1]=='0' && !isOperator(buttonHtml) && buttonHtml!='.')
+    if(isOperator(string[string.length-2]) && string[string.length-2]!='.' && string[string.length-1]=='0' && !isOperator(buttonHtml) && buttonHtml!='.')
     {
         string=string.slice(0,-1);
     }
