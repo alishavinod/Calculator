@@ -3,10 +3,27 @@
   body {
     margin: 7% 20% !important;
   }
+  h6 {
+    margin-left: 55% !important;
+    margin-right: 6% !important;
+  }
 }
 @media screen and (max-width: 500px) {
   body {
     margin: 7% !important;
+  }
+  h6 {
+    margin-left: 38% !important;
+    margin-right: 6% !important;
+  }
+}
+@media screen and (max-width: 330px) {
+  body {
+    margin: 7% !important;
+  }
+  h6 {
+    margin-left: 28% !important;
+    margin-right: 6% !important;
   }
 }
 body {
