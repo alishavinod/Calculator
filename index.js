@@ -12,7 +12,7 @@ else
     document.querySelector("body").classList="theme2";
 }
 else
-    if(document.querySelector("input").value=='3')
+    if(document.querySelector("input").value==='3')
     {
         document.querySelector("body").classList="theme3";
     }
