@@ -26,11 +26,23 @@
     margin-right: 6% !important;
   }
 }
-body {
+body.theme1 {
   background-color: hsl(222, 26%, 31%);
   font-family: "Spartan", sans-serif;
   margin: 7% 33%;
   color: white;
+}
+body.theme2 {
+  background-color: hsl(0, 0%, 90%);
+  font-family: "Spartan", sans-serif;
+  margin: 7% 33%;
+  color: hsl(60, 10%, 19%);
+}
+body.theme3 {
+  background-color: hsl(268, 75%, 9%);
+  font-family: "Spartan", sans-serif;
+  margin: 7% 33%;
+  color: hsl(52, 100%, 62%);
 }
 .container-1 {
   display: flex;
@@ -45,33 +57,89 @@ body {
 * {
   margin: 0;
 }
-input {
+.theme1 input {
   width: 65px;
   padding: 4px;
   border-radius: 50px;
   appearance: none;
   background-color: hsl(223, 31%, 20%);
 }
-input[type="range"]::-webkit-slider-thumb {
+.theme2 input {
+  width: 65px;
+  padding: 4px;
+  border-radius: 50px;
+  appearance: none;
+  background-color: hsl(0, 5%, 81%);
+}
+.theme3 input {
+  width: 65px;
+  padding: 4px;
+  border-radius: 50px;
+  appearance: none;
+  background-color: hsl(268, 71%, 12%);
+}
+.theme1 input::-webkit-slider-thumb {
   appearance: none;
   height: 14px;
   width: 14px;
   border-radius: 50%;
   background-color: hsl(6, 63%, 50%);
 }
-input[type="range"]::-moz-range-thumb {
+.theme1 input:-moz-range-thumb {
   appearance: none;
   height: 14px;
   width: 14px;
   border-radius: 50%;
   background-color: hsl(6, 63%, 50%);
 }
-input[type="range"]::-ms-thumb {
+.theme1 input::-ms-thumb {
   appearance: none;
   height: 14px;
   width: 14px;
   border-radius: 50%;
   background-color: hsl(6, 63%, 50%);
+}
+.theme2 input::-webkit-slider-thumb {
+  appearance: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background-color: hsl(25, 98%, 40%);
+}
+.theme2 input::-moz-range-thumb {
+  appearance: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background-color: hsl(25, 98%, 40%);
+}
+.theme2 input::-ms-thumb {
+  appearance: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background-color: hsl(25, 98%, 40%);
+}
+.theme3 input::-webkit-slider-thumb {
+  appearance: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background-color: hsl(176, 100%, 44%);
+}
+.theme3 input::-moz-range-thumb {
+  appearance: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background-color: hsl(176, 100%, 44%);
+}
+.theme3 input::-ms-thumb {
+  appearance: none;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  background-color: hsl(176, 100%, 44%);
 }
 h6 {
   margin-left: 59%;
@@ -80,7 +148,7 @@ h6 {
 p {
   font-weight: bold;
 }
-.result {
+.theme1 .result {
   margin: 3% auto;
   padding: 7% 7% 2% 0;
   height: 60px;
@@ -88,10 +156,36 @@ p {
   border-radius: 10px;
   background-color: hsl(224, 36%, 15%);
 }
-.container-2 {
+.theme2 .result {
+  margin: 3% auto;
+  padding: 7% 7% 2% 0;
+  height: 60px;
+  text-align: right;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 93%);
+}
+.theme3 .result {
+  margin: 3% auto;
+  padding: 7% 7% 2% 0;
+  height: 60px;
+  text-align: right;
+  border-radius: 10px;
+  background-color: hsl(268, 71%, 12%);
+}
+.theme1 .container-2 {
   padding: 4%;
   display: flex;
   background-color: hsl(223, 31%, 20%);
+}
+.theme2 .container-2 {
+  padding: 4%;
+  display: flex;
+  background-color: hsl(0, 5%, 81%);
+}
+.theme3 .container-2 {
+  padding: 4%;
+  display: flex;
+  background-color: hsl(268, 71%, 12%);
 }
 .border-top {
   border-top-left-radius: 10px;
@@ -101,7 +195,7 @@ p {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-button {
+.theme1 button {
   margin: 0 2%;
   padding: 2%;
   background-color: hsl(30, 25%, 89%);
@@ -113,35 +207,106 @@ button {
   width: 100px;
   border: none;
 }
-/* button:active {
+.theme2 button {
+  margin: 0 2%;
+  padding: 2%;
+  background-color: hsl(45, 7%, 89%);
+  box-shadow: 0px 4px hsl(35, 11%, 61%);
+  color: hsl(60, 10%, 19%);
+  font-weight: 700;
+  border-radius: 10px;
+  height: 55px;
+  width: 100px;
+  border: none;
+}
+.theme3 button {
+  margin: 0 2%;
+  padding: 2%;
+  background-color: hsl(268, 47%, 21%);
+  box-shadow: 0px 4px hsl(290, 70%, 36%);
+  color: hsl(52, 100%, 62%);
+  font-weight: 700;
+  border-radius: 10px;
+  height: 55px;
+  width: 100px;
+  border: none;
+}
+.theme1 button:active {
   background-color: hsl(28, 16%, 65%);
-} */
+}
+.theme2 button:active {
+  background-color: hsl(35, 11%, 61%);
+}
+.theme3 button:active {
+  background-color: hsl(290, 70%, 36%);
+}
 .number {
   font-size: 32px;
 }
 .del {
   width: 100px !important;
 }
-.blue-button {
+
+.theme1 .blue-button {
   background-color: hsl(225, 21%, 49%);
   box-shadow: 0px 4px hsl(224, 28%, 35%);
   color: white;
   font-size: 20px;
   width: 220px;
 }
-/* .blue-button:active {
+.theme2 .blue-button {
+  background-color: hsl(185, 42%, 37%);
+  box-shadow: 0px 4px hsl(185, 58%, 25%);
+  color: white;
+  font-size: 20px;
+  width: 220px;
+}
+.theme3 .blue-button {
+  background-color: hsl(281, 89%, 26%);
+  box-shadow: 0px 4px hsl(285, 91%, 52%);
+  color: white;
+  font-size: 20px;
+  width: 220px;
+}
+.theme1 .blue-button:active {
   background-color: hsl(224, 28%, 35%);
-} */
-.equals {
+}
+.theme2 .blue-button:active {
+  background-color: hsl(185, 58%, 25%);
+}
+.theme3 .blue-button:active {
+  background-color: hsl(285, 91%, 52%);
+}
+.theme1 .equals {
   background-color: hsl(6, 63%, 50%);
   box-shadow: 0px 4px hsl(6, 70%, 34%);
   color: white;
   font-size: 20px;
   width: 220px;
 }
-/* .equals:active {
+.theme2 .equals {
+  background-color: hsl(25, 98%, 40%);
+  box-shadow: 0px 4px hsl(25, 99%, 27%);
+  color: white;
+  font-size: 20px;
+  width: 220px;
+}
+.theme3 .equals {
+  background-color: hsl(176, 100%, 44%);
+  box-shadow: 0px 4px hsl(177, 92%, 70%);
+  color: hsl(198, 20%, 13%);
+  font-size: 20px;
+  width: 220px;
+}
+.theme1 .equals:active {
   background-color: hsl(6, 70%, 34%);
-} */
+}
+.theme2 .equals:active {
+  background-color: hsl(25, 99%, 27%);
+}
+.theme3 .equals:active {
+  background-color: hsl(177, 92%, 70%);
+}
 .operator {
   font-size: 30px;
 }
